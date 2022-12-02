@@ -1,0 +1,20 @@
+KNOWN BUGS
+    - Image loading at start for rect values
+        - image class for fix ?
+
+init tiles
+tileset class with method get tiles or init to list of tiles -> map each tile to a list from all tilesets with gid and placemen and crop
+create layers classes by going through all the tiles from tileset classes or created list
+adjust generic class to handle drawing or create new classes for each layer with generic as super
+Own class for objects
+
+create modules
+
+ADD FEATURES
+
+
+REFCATORING
+    - screen/display class where blit(img, surf) happens
+    - surface class
+    - image class
+
