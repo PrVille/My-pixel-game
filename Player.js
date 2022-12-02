@@ -15,7 +15,7 @@ class Player extends Sprite {
     //movement
     this.direction = new Vector2D(0, 0)
     this.pos = new Vector2D(this.rect.centerx, this.rect.centery)
-    this.speed = 1000
+    this.speed = 200
     this.canMove = true
 
     //collision
