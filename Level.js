@@ -205,24 +205,24 @@ class CameraGroup extends Group {
             sprite.draw(ctx, offsetRect)
 
             // analytics
-            if (sprite.player){ 
-              ctx.lineWidth = 5;
-              ctx.strokeStyle = "red";
-              ctx.strokeRect(offsetRect.x, offsetRect.y, offsetRect.w, offsetRect.h);
-              const hitBoxRect = player.hitbox.copy()
-              hitBoxRect.centerx = offsetRect.centerx
-              hitBoxRect.centery = offsetRect.centery
-              ctx.lineWidth = 5;
-              ctx.strokeStyle = "green";
-              ctx.strokeRect(hitBoxRect.x, hitBoxRect.y, hitBoxRect.w, hitBoxRect.h);
-              const x = offsetRect.centerx + PLAYER_TOOL_OFFSET[player.status.split("_")[0]].x
-              const y = offsetRect.centery + PLAYER_TOOL_OFFSET[player.status.split("_")[0]].y
-              ctx.strokeStyle = "blue";
-              ctx.beginPath();
-              ctx.arc(x, y, 1, 0, 2 * Math.PI);
-              ctx.stroke();
+            // if (sprite.player){ 
+            //   ctx.lineWidth = 5;
+            //   ctx.strokeStyle = "red";
+            //   ctx.strokeRect(offsetRect.x, offsetRect.y, offsetRect.w, offsetRect.h);
+            //   const hitBoxRect = player.hitbox.copy()
+            //   hitBoxRect.centerx = offsetRect.centerx
+            //   hitBoxRect.centery = offsetRect.centery
+            //   ctx.lineWidth = 5;
+            //   ctx.strokeStyle = "green";
+            //   ctx.strokeRect(hitBoxRect.x, hitBoxRect.y, hitBoxRect.w, hitBoxRect.h);
+            //   const x = offsetRect.centerx + PLAYER_TOOL_OFFSET[player.status.split("_")[0]].x
+            //   const y = offsetRect.centery + PLAYER_TOOL_OFFSET[player.status.split("_")[0]].y
+            //   ctx.strokeStyle = "blue";
+            //   ctx.beginPath();
+            //   ctx.arc(x, y, 1, 0, 2 * Math.PI);
+            //   ctx.stroke();
 
-            }
+            // }
             
           }
         })
