@@ -3,7 +3,7 @@ let game
 const initGame = () => {
   game = new Game(SCREEN_WIDTH, SCREEN_HEIGHT)
   game.run()
-  game.stop()
+  //game.stop()
 }
 
 
